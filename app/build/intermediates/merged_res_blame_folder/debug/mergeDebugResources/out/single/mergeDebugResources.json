@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\layout_item_history.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\layout\\item_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\drawable_ic_transparent.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\drawable\\ic_transparent.xml"
+    },
+    {
+        "merged": "com.notificationdetector.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.notificationdetector.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\drawable_bg_text_border.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\drawable\\bg_text_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\drawable_ic_bank_c6.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\drawable\\ic_bank_c6.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\layout_settings_button.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\layout\\settings_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-debug-31:\\drawable_ic_bank_default.xml.flat",
+        "source": "C:\\Users\\andrade\\.gradle\\daemon\\8.12\\com.notificationdetector.app-main-33:\\drawable\\ic_bank_default.xml"
+    }
+]

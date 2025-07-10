@@ -1,0 +1,142 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/transparent">
+
+        <!-- Nome do app -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NotificationDetector"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Barra horizontal: status à esquerda, engrenagem à direita -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+            <com.notificationdetector.StrokeTextView
+                android:id="@+id/statusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Serviço Inativo"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:textColor="@color/black" />
+            <Button
+                android:id="@+id/settingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@android:drawable/ic_menu_manage"
+                android:contentDescription="Configurações"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Botão de teste -->
+        <Button
+            android:id="@+id/testApiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testar Envio para API"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Testar envio de notificação para API" />
+
+        <!-- Campo de Debug do teste da API -->
+        <TextView
+            android:id="@+id/testApiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campo de Debug do teste da API"
+            android:textColor="#B00020"
+            android:textSize="14sp"
+            android:background="@drawable/bg_text_border"
+            android:padding="8dp"
+            android:layout_marginBottom="12dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Resultado do teste da API" />
+
+        <!-- Buscar -->
+        <EditText
+            android:id="@+id/searchEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar no histórico..."
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:background="@drawable/bg_text_border"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Campo de busca no histórico" />
+
+        <!-- Botões de ação -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginBottom="12dp">
+            <Button
+                android:id="@+id/clearHistoryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpar Histórico"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/purple_200"
+                android:layout_marginEnd="8dp"
+                android:importantForAccessibility="yes"
+                android:contentDescription="Limpar histórico de notificações" />
+            <Button
+                android:id="@+id/refreshHistoryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Forçar Atualização"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/purple_200"
+                android:importantForAccessibility="yes"
+                android:contentDescription="Forçar atualização do histórico" />
+        </LinearLayout>
+
+        <!-- Histórico -->
+        <com.notificationdetector.StrokeTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Histórico de notificações:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:overScrollMode="ifContentScrolls"
+            android:padding="8dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

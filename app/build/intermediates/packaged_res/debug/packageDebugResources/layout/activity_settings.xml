@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/permissionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permissões de Notificação" />
+
+        <EditText
+            android:id="@+id/apiUrlEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL da API"
+            android:inputType="textUri"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar Configurações"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/exportHistoryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportar Histórico"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/requestStorageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Permissão Arquivo"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
